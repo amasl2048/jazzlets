@@ -13,13 +13,13 @@ empty = {
 solo = \relative c'' {
   \clef treble
   \key g \minor
-  
+  \set Staff.instrumentName = #"Guitar"
+
   \set fingeringOrientations = #'(down)
   \set stringNumberOrientations = #'(up)
   \override Fingering #'staff-padding = #'()
 
 % A1
-%\mark \markup {\box Melody}
 bes'4 g f g
 r2 f4 d
 f4 r2 bes,4
@@ -44,6 +44,18 @@ ees4 r8 g, aes aes r8 f
 
 } % end solo
 
+bass = \relative c' {
+  \clef treble
+  \key g \minor
+  \time 4/4
+  \set Staff.instrumentName = #"Bass"
+
+g4 a bes c   cis d e f   fis g a ais   a g d cis
+
+c g f a   ais f' ees bes  a e' c d  ees ais, gis fis
+
+
+}  % end bass
 
 harmonies = \chordmode {
 
@@ -67,6 +79,10 @@ bes1:maj a2:m5.7- d:7 g1:m7 d:7
     \new Staff {
       \set Staff.midiInstrument = #"electric guitar (jazz)"
       \solo
+    }
+    \new Staff {
+      \set Staff.midiInstrument = #"fretless bass"
+      \bass
     }
   >>
   \layout {}
