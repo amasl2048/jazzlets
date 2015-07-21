@@ -20,13 +20,19 @@ solo = \relative c'' {
 
 % A1
 %\mark \markup {\box Melody}
-\empty
-
+bes'4 g f g
+r2 f4 d
+f4 r2 bes,4
+c4 f, \times 2/3 {d8 des c} bes4  
+\break
 
 % A2
 %\mark \markup {\box Accents}
-\empty
-
+r8 d' g g r d f4
+\times 2/3 {des4 f bes} \times 2/3 {aes4 ees f}
+a2 fis4. cis8
+ees4 r8 g, aes aes r8 f
+\break
 
 % B
 %\mark \markup {\box Melody} 
@@ -41,13 +47,13 @@ solo = \relative c'' {
 
 harmonies = \chordmode {
 
-g:m7 g:m7 g:m7 g:m7
+g1:m7 g:m7 g:m7 g:m7
 
-\times 2/4 {c:m7 f:7 bes:m7 ees:7 a:m7 d:7 ees:7 aes:7} 
+c2:m7 f:7 bes:m7 ees:7 a:m7 d:7 ees:7 aes:7 
 
-g:m7 g:m7 g:m7 g:m7
+g1:m7 g:m7 g:m7 g:m7
 
-bes:maj \times 2/4 {a:m5.7- d:7} g:m7 d:7
+bes1:maj a2:m5.7- d:7 g1:m7 d:7
 
 } % end harmonies
 
