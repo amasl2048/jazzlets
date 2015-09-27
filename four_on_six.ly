@@ -39,7 +39,7 @@ ees4 r8 ges, aes aes r8 fis
 %\mark \markup {\box Melody} 
 g4. g'4. d4~
 d8 g'4. d8 bes g4
-ees4 d8 ees a,4 d
+e4 d8 e a,4 d
 c8 d g,4 c bes8 c 
 \break
 
@@ -47,27 +47,35 @@ c8 d g,4 c bes8 c
 %\mark \markup {\box Break} 
 f,4. c' c'4~
 c8 bes fis e fis c4.
-r8 bes f' d c bes c g
-fis8 g bis a bis c4.
+r8 bes f'( d) c bes c g
+fis8 a c a bis c4.
 \break
 
 % Improvisation 2nd part
 \mark \markup {\box 2}
 
-g,8 bes c d ees g c, d
-f g bes c ees, g bes c   
-d f g bes c bes g4
-d'8 c a4 ees'8 d c4
+g,8( bes) c( d) ees( g) c,( d)
+f( g) bes( c) ees,( g) bes( c)   
+d( f) g( bes) c( bes) g4
+d'8( c) a4 ees'8( d) c4
 \break
 
-c8 bes g4 c r4
-r1
-r1
-r1
+c8 bes g4 c c
+c8 bes g c c4 c
+c8 a g4 c c
+c8 bes g c c ces b4
 \break
 
-\empty
-\empty
+f8 ees bes4 f' f
+e8 d a4 ees'8 des aes4
+d8 c g4 d' d
+c8 ces bes4 r4 r4
+\break
+
+bes8 d f a c bes a f
+d ees g d fis c cis d
+bes g a bes f d f ees
+fis g d c a g fis g
 
 } % end solo
 
