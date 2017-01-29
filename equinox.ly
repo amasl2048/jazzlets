@@ -77,7 +77,20 @@ bass = \relative c' {
   \override Fingering #'staff-padding = #'()
 <<
 {r8 <bes' ees g> r4 r2
-r8 <d g bes> r4 r2}
+r8 <d g bes> r4 r2
+r2 r8 <ees g>8 r4
+r2 r8 <ees g>8 r4
+
+r8 <c ees aes> r4 r2
+r8 <ges' bes> r4 r2
+r2 r8 <bes, ees g>8 r4
+r2 r8 <bes ees g>8 r4
+
+r8 <ges c ees> r4 r2
+r8 <f b d> r4 r2
+<c g' bes ees>4 <d aes' b f'> <ees bes' d g> <f b d aes'>
+r8 <c' f bes> r4 r2
+}
 \\
 {c,4 b c d
 ees d ees f
