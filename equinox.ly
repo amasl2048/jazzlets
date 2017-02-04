@@ -56,6 +56,23 @@ r8 <c, ees  bes' d>4. <c ees  bes' d>8 <c ees  bes' d>8 r4 |
 <des f b ees>4 r8 <des f b ees>8~ <des f b ees>4  r4 |
 \break
 
+% 3
+\mark \markup {\box 3}
+
+g'8 a bes f g ees d b |
+c bes a bes c f g d |
+ees f ges g c b g f |
+bes ees, d a' c, bes a bes |
+\break
+
+aes' bes c ees c d c aes
+ees f aes g ees c bes c
+a bes f' ees r2
+r1
+
+\break
+\empty
+
 } % end solo
 
 harmony = \chordmode {
@@ -119,6 +136,7 @@ g ees d b}
     \time 4/4 
     \new ChordNames {
       \set chordChanges = ##t
+      \harmony
       \harmony
       \harmony
     }
