@@ -67,11 +67,14 @@ bes ees, d a' c, bes a bes |
 
 aes' bes c ees c d c aes
 ees f aes g ees c bes c
-a bes f' ees r2
-r1
+a bes f' ees c d bes a
+g' f ees d bes c ees f
 
 \break
-\empty
+ges des c ees des aes a ges'
+f c e d c b g f
+ees bes d c d a bes g
+f ees d4 r2
 
 } % end solo
 
