@@ -1,4 +1,8 @@
 \version "2.16.2"
+\paper {
+  top-margin    = 2\cm
+  bottom-margin = 3\cm
+}
 \header {
     title = "Equinox"
     subtitle = "(Improvisation by Andrey & Nikita)"
@@ -29,8 +33,8 @@ solo = \relative c''' {
 \empty
 \break
 
-c8 ees c aes ees f aes ees
-b c bes aes f fis g4
+c8 ees c aes ees f aes ees |
+b c bes aes f fis g4 |
 r1
 r1
 \break
@@ -59,22 +63,22 @@ r8 <c, ees  bes' d>4. <c ees  bes' d>8 <c ees  bes' d>8 r4 |
 % 3
 \mark \markup {\box 3}
 
-g'8 a bes f g ees d b |
+g'8 a bes-> f g-> ees d b |
 c bes a bes c f g d |
-ees f ges g c b g f |
-bes ees, d a' c, bes a bes |
+ees f ges g c-> b g f |
+bes-> ees, d a'-> c, bes a bes |
 \break
 
-aes' bes c ees c d c aes
-ees f aes g ees c bes c
-a bes f' ees c d bes a
-g' f ees d bes c ees f
+aes'-> bes c ees-> c d-> c aes |
+ees f aes g ees c bes c |
+a bes f'-> ees c d-> bes a |
+g'-> f ees d bes c ees f |
 
 \break
-ges des c ees des aes a ges'
-f c e d c b g f
-ees bes d c d a bes g
-f ees d4 r2
+ges des'-> c ees-> des aes a ges'-> |
+f c e-> d c b g f |
+ees bes d c d a bes g |
+f ees d4 r2 |
 
 } % end solo
 
