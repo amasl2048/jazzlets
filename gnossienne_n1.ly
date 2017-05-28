@@ -25,7 +25,7 @@ solo = \relative c'' {
   \override Fingering #'staff-padding = #'()
 
 % 1
-\mark \markup {\box 1}
+\mark \markup {\box A}
 
 c8 e g fis g (fis) a4 |
 a,,4 <e' a>8 a,8 a8 <e' a>4. |
@@ -34,7 +34,7 @@ a,4 <a' c>8 a,8 a8 <a' c>4. |
 
 \break
 
-a,4 dis''4 b8 g e fis |
+a,8 dis''4 b8~ b8 g e fis |
 e8 d b a a,8 <gis' c>~ <gis c>4 |
 \times 2/3 {e8 a b} c4 \times 2/3 {e8 (d) b} a8 g |
 a,4 <e' a>8 a,8 a8 <e' a>4. |
@@ -48,7 +48,7 @@ dis4 a,,8 e'' a,, <gis' c>~ <gis c>4 |
 
 \break
 % 2
-\mark \markup {\box 2}
+\mark \markup {\box B}
 
 \times 2/3 {b'8 (c) d} c8 b \times 2/3 {g fis (e)} fis4 |
 dis8 c a ais g e f d |
@@ -56,9 +56,17 @@ dis8 c a ais g e f d |
 a,4 <e' a>8 a,8 a8 <e' a>4. |
 
 \break
-\empty
+r1 
+r1
+<a, b''>4 \times 2/3 {g'8 c g'} \times 2/3 {fis (e) fis} \times 2/3 {dis fis b}|
+\times 2/3 {a8 e d} \times 2/3 {c' a fis} \times 2/3 {g d g,} dis4 |
 
-\empty
+\break
+r1
+r1
+<a b''>4 ais''16 (a) <e c>8~ <e c>8 a16 (gis) <e c>8 f16 (e) |
+<c a >8 e16 (dis) <c gis>4 c8 (b) a, <e' a> |
+
 
 } % end solo
 
