@@ -53,20 +53,19 @@ dis4 a,,8 e'' a,, <gis' c>~ <gis c>4 |
 \times 2/3 {b'8 (c) d} c8 b \times 2/3 {g fis (e)} fis4 |
 dis8 c a ais g e f d |
 \times 2/3 {d8 cis c} b4 a <e' a> |
-a,4 <e' a>8 a,8 a8 <e' a>4. |
+a,4 <e' a>8 a,8 a8 <e' a>4 <e' gis cis>8 |
 
-\break
-r1 
-r1
-<a, b''>4 \times 2/3 {g'8 c g'} \times 2/3 {fis (e) fis} \times 2/3 {dis fis b}|
-\times 2/3 {a8 e d} \times 2/3 {c' a fis} \times 2/3 {g d g,} dis4 |
+\break % Dm
+<d,, f'' a d>4 <a''' e b>8 c \glissando b <a, d f>~ <a d f>4 |
+\times 2/3 {d4 <c' a e> c} <gis, d' f b>4. c'8 |
+<a,, b''>4 \times 2/3 {g'8 c g'} \times 2/3 {fis8 (e) fis} \times 2/3 {dis8 fis b} |
+\times 2/3 {a8 e d} \times 2/3 {c' a fis} \times 2/3 {g d g,} dis8 cis'' |
 
-\break
-r1
-r1
-<a b''>4 ais''16 (a) <e c>8~ <e c>8 a16 (gis) <e c>8 f16 (e) |
+\break % Dm
+<d,,, d'''>4 <f'' a>8 c' b4 <a, d f> |
+<a dis g d'>4 c' <gis, d' fis b> <gis dis' f c'> |
+<a, b''>4 ais''16 (a) <e c>8~ <e c>8 a16 (gis) <e c>8 f16 (e) |
 <c a >8 e16 (dis) <c gis>4 c8 (b) a, <e' a> |
-
 
 } % end solo
 
