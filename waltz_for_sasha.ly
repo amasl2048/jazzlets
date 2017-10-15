@@ -1,4 +1,10 @@
 \version "2.16.2"
+
+\paper {
+  top-margin    = 2\cm
+  bottom-margin = 2\cm
+}
+
 \header {
     title = "Waltz for Sasha"
     subtitle = "(for my loved wife)"
@@ -80,14 +86,49 @@ e,8 <e' d'> <g e'> <a fis'> <c a'> d' |
 \mark \markup {\box Solo}
 
 <a,,, e' g b>8 c' <a, e' g d'> g'' fis e |
-<a,, c' e b>16 a'' fis4 fis16 (e) c4 |
-<d, e'>8 fis' cis a g4 |
-<a, c'>8 b'8~ b g16 a d,4 | 
+<a,, c' e b'>16 a'' fis4 fis16 (e) c4 |
+<d, g'>8 fis' cis a g4 |
+<a, c'>8 b'8~ b g16 fis d4 | 
 
-\break
+  \break
+
+\times 2/3 {c8 g' c} \times 2/3 {fis, c' e} <fis, c' e>8 g'8 |
+\times 2/3 {e8 c ees} \times 2/3 {e c bes} r4 |
+e,,4 <g' d' fis>8 g' <c, fis a> b' |
+<d,, d' g d'>8 <e' a e'> <d g d'> d, <a' d a'> d, |
+  
+  \break
+
+\mark \markup {\box A2}
+
 \empty
-\break
+  
+  \break
 
+    \empty
+  
+  \break
+
+% Bridge
+\mark \markup {\box B}
+
+  \empty
+  
+  \break
+
+  \empty
+  
+  \break
+
+\mark \markup {\box A'}
+   \empty
+  
+  \break
+
+   \empty
+  
+  \break
+  
 } % end solo
 
 apart = \chordmode {
@@ -114,7 +155,10 @@ harmonies = \chordmode {
 %
  \intro
 
-\apart
+ \apart
+ \apart
+ \bridge
+ \apart
 
 } % end harmonies
 
