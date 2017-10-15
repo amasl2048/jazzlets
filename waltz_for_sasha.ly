@@ -56,7 +56,7 @@ b8 e b4 r4 |
 \mark \markup {\box A'}
 
 <a, g' c e>4 b'' d16 c b c |
-b8. g16 e c d8~ d e |
+b8. g16 e c d8 d e |
 <b, fis' a d>4 d'8 e <a, cis fis> g' |
 <a,, g' c d>4 \times 2/3 {<e' a d>8 <g c e> <fis c' d>} <b d>8. c16 |
 
@@ -78,7 +78,12 @@ e,8 <e' d'> <g e'> <a fis'> <c a'> d' |
 
 % Solo
 \mark \markup {\box Solo}
-\empty
+
+<a,,, e' g b>8 c' <a, e' g d'> g'' fis e |
+<a,, c' e b>16 a'' fis4 fis16 (e) c4 |
+<d, e'>8 fis' cis a g4 |
+<a, c'>8 b'8~ b g16 a d,4 | 
+
 \break
 \empty
 \break
