@@ -92,20 +92,26 @@ e,8 <e' d'> <g e'> <a fis'> <c a'> d' |
 
   \break
 
-\times 2/3 {c8 g' c} \times 2/3 {fis, c' e} <fis, c' e>8 g'8 |
+\times 2/3 {c8 g' c} \times 2/3 {fis, c' e~} <fis, c' e>8 g'8 |
 \times 2/3 {e8 c ees} \times 2/3 {e c bes} r4 |
 e,,4 <g' d' fis>8 g' <c, fis a> b' |
-<d,, d' g d'>8 <e' a e'> <d g d'> d, <a' d a'> d, |
+<d,, d' g d'>8 (<e' a e'>) (<d g d'>) d, <a' d a'> d, |
   
   \break
 
 \mark \markup {\box A2}
 
-\empty
+<a c' e b'>4 a'16 b c e g b d c |
+b4 <a,, c' e g>8 d''16 c b a g8 |
+<d, fis'>8 d'16 b d8 e d, <d' fis> |
+<a, g' c d>8 a a16 a' c d e g a c |
   
   \break
 
-    \empty
+b8 <g,~ c~ e~> <g c e> g'16 e g8 b |
+c8 <fis,, c' e a > g' <c, e> b <e a> |
+e,,8 <g' d' g>16 e' g8 <b, e' a> <e a d> <fis b e> |
+d <a' cis fis> d,, <fis' a d> d, <cis' fis a> | 
   
   \break
 
