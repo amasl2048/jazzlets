@@ -27,6 +27,7 @@ solo = \relative c'' {
 % A
 \mark \markup {\box A}
 
+\repeat volta 2 {
 e4 b' d,8  e |
 \times 2/3 {e8 fis d} e4 b' |
 \times 2/3 {cis8 b a} fis4 r16 g16 fis8 |
@@ -40,6 +41,7 @@ r8 d8 e fis a d |
 \times 3/4 {cis4 b fis d} |
 
   \break
+} % end repeat
 
 % Bridge
 \mark \markup {\box B}
@@ -75,6 +77,7 @@ e,8 <e' d'> <g e'> <a fis'> <c a'> d' |
 
 \break
 
+% intro
 <c e g b>4.     e''8  b4   |
 <d,, fis g b>4. b'''8 fis4 |
 <c,, e g b>4.   e''8  b4   |
@@ -118,22 +121,41 @@ d <a' cis fis> d,, <fis' a d> d, <cis' fis a> |
 % Bridge
 \mark \markup {\box B}
 
-  \empty
+<g d' fis b>4  \times 2/3 {a8 d e} fis16 b d a |
+g'16 a g e b c d b d a b g |
+<d, b''>16 fis' a8 g16 d fis cis e8 d16 e |
+<e,, e''>16 b'' ees b  d a b a~ a  a8~ a16 |
   
   \break
 
-  \empty
+<b e>16 a, <b' ees> a, <a' cis> a,8 a16 <aes' b> a,8. |
+<d fis a b e>16 a'8 a16~ a16 a8 a16 <d, b' e> a'8 a16 |
+<f, c' d a' b e>16 a'8 a16~ a16 a8 a16 a8 a |
+<bes, d gis c e>16 gis'8 gis16~ gis16 gis8 gis8\fermata r16 r8 |
   
   \break
 
 \mark \markup {\box A'}
-   \empty
-  
-  \break
 
-   \empty
-  
-  \break
+<a, g' c e>4 b'' d16 c b c |
+b8. g16 e c d8 d e |
+<b, fis' a d>4 d'8 e <a, cis fis> g' |
+<a,, g' c d>4 \times 2/3 {<e' a d>8 <g c e> <fis c' d>} <b d>8. c16 |
+
+ \break
+
+<c, e g b>8 e' b4 g |
+\times 2/3 {a'8 e ees} d4 <fis, a c> |
+e,8 <e' d'> <g e'> <a fis'> <c a'> d' |
+\times 3/4 {<d,, d' fis cis'>4 <c' fis b> <a cis fis> <fis b d>} |  
+
+ \break
+
+% intro
+<c e g b>4.     e''8  b4   |
+<d,, fis g b>4. b'''8 fis4 |
+<c,, e g b>4.   e''8  b4   |
+<d,, fis g b>4. b'''8 fis4 |
   
 } % end solo
 
@@ -165,6 +187,8 @@ harmonies = \chordmode {
  \apart
  \bridge
  \apart
+
+ \intro
 
 } % end harmonies
 
