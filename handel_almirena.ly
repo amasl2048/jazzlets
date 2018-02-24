@@ -20,7 +20,7 @@ empty = {
   r1 r r r \break
 }
 
-solo = \relative c' {
+theme = \relative c' {
   \clef treble
   \key a \major
 
@@ -28,7 +28,7 @@ solo = \relative c' {
   \set stringNumberOrientations = #'(up)
   \override Fingering #'staff-padding = #'()
 
-% A
+% A (3/4)
 \mark \markup {\box A}
 
 <a e' a cis>4 <e' a cis> r8 <e a cis>8 |
@@ -60,34 +60,43 @@ solo = \relative c' {
 
 \break
 
-% A'
+% A' (4/4)
 \mark \markup {\box A'}
 
-\emptyt
-
-\break
-
-\emptyt
-
-\break
-
-
-} % end solo
-
-
-solof = \relative c' {
-
-% A
-\mark \markup {\box A}
-
-<e a cis>4 a,8 <e' a cis>8 r8 a,8 <e' a b>4 |
+<e' a cis>4 a,8 <e' a cis>8 r8 a,8 <e' a b>4 |
 <fis a d>4 b,8 <a' d fis>8 r4 cis8 d |
 <b, d a' b>4 e,8 <d' gis b e>8 r8 e, <e' gis d'>4 |
 <e a d>4 a,8 <e' a cis> r8 b' cis d |
 
 \break
 
-\empty
+<a d fis>4 d,8 <b' d fis> r8 gis' a b |
+<d,, gis b e>4 cis8 <e a e'> r8 d' cis4 |
+<d, fis a cis>4 b' \times 2/3 {cis8 e a } \times 2/3 {e b a} |
+<a, cis e a>1 |
+
+\break
+
+
+} % end theme
+
+
+solo = \relative c' {
+
+% A (4/4)
+\mark \markup {\box A solo}
+
+<a cis'>4 <e' a> \times 2/3 {e,4 <e' a d> a'} |
+<b,, cis'>4 <fis' a>8 d' fis,,4 <fis' a> |
+<b, a''>4 <fis' a d>8 e' e,, b' <d gis b>4 |
+<a b'>4 <e' a>8 cis' e,,8 <e' a>4 e'8 |
+
+\break
+
+<d, fis'>4 <a' d>8 gis' \times 2/3 {a,,4 <b' d a'> b'} |
+\times 2/3 {<e,,, fis''>4 <d'' e> a'} \times 2/3 {<e,, d'''> <e'' gis> cis'} |  
+<d,, cis''>8 <d' fis> b'4 <e,,, a''>8 <b'' d> gis'4 |
+a,,8 <e' a cis> a' fis b, a <a, cis e a>4 |
 
 \break
 
@@ -114,21 +123,26 @@ r1 r r
 \break
 
 
-} % end solof
+} % end solo
 
-apart = \chordmode {
+apart = \chordmode {  % 3/4
 a2. b:m7 e:7 a4:sus4 a2
 d4 d2:6 e4:7 a2 d2:maj e4:7 a2.:maj
 }
 
-bridge = \chordmode {
+bridge = \chordmode {  % 3/4
 a4 fis2:m11 b2.:7 b4:7 gis2:m11
 cis2.:m b:7 e
 }
 
-apartf = \chordmode {
-a1 b:m7 e:7 a2:sus4 a
-d2 d:6 e:7 a d:maj e:7 a1:maj
+aparts = \chordmode {  % 4/4
+a1 b:m7 e:7 a4:sus4 a4 a2
+d4 d4:6 d2:6 e4:7 a4 a2 d4:maj e4:7 e2:7 a1:maj
+}
+
+apartf = \chordmode {  % 4/4
+a1 b:m7 e:7 a2:sus4 a2
+d4 d4:6 d2:6 e2:7 a2 d2:maj e2:7 a1:maj
 }
 
 bridgef = \chordmode {
@@ -142,8 +156,7 @@ harmonies = \chordmode {
  \apart
 %A2
  \bridge
-%A'
- \apart
+
 } % end harmonies
 
 harmoniesf = \chordmode {
@@ -162,14 +175,15 @@ harmoniesf = \chordmode {
       \time 3/4
       \harmonies
       \time 4/4
+      \aparts
       \harmoniesf
     }
     \new Staff {
       \set Staff.midiInstrument = #"electric guitar (jazz)"
       \time 3/4
-      \solo
+      \theme
       \time 4/4
-      \solof
+      \solo
     }
 
   >>
