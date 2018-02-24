@@ -38,20 +38,25 @@ solo = \relative c' {
 
 \break
 
-\emptyt
+<d a' d fis>4 <e d' fis> gis'8 a16 b |
+<d,, gis b e>4 <cis e a cis e> r8 cis' |
+<d, fis a cis>8 b' <cis, e a cis>4 <e, b' d gis b>8 a' |
+<a, cis e a>2. |
 
 \break
 
 % Bridge
 \mark \markup {\box B}
 
-r2. r2. r2.
+<a e' a cis>4 <fis e' a cis a'> r8 fis'' |
+<b,, fis' a dis>8 <b dis a' cis> <fis dis' a' b>4 <fis dis' a'> | 
+<b fis' a dis fis>4 <gis dis' fis b dis b'> r8 gis''8 |
 
 \break
 
-r2.
-r2.
-r2.
+<cis,, gis' cis e>8 dis' <cis, a' cis e>4 r8 a'' |
+<b,, gis''>8 fis'' <b, e gis> b, <b a' dis fis>8. e'16 |
+<e,, b' a' gis' b e>2. |
 
 \break
 
@@ -112,12 +117,12 @@ r1 r r
 } % end solof
 
 apart = \chordmode {
-a2. b:m7 e:7 a4.:sus4 a4.
-d4. d4.:6 e:7 a d:maj e:7 a2.:maj
+a2. b:m7 e:7 a4:sus4 a2
+d4 d2:6 e4:7 a2 d2:maj e4:7 a2.:maj
 }
 
 bridge = \chordmode {
-a4. fis:m11 b2.:7 b4.:7 gis4.:m11
+a4 fis2:m11 b2.:7 b4:7 gis2:m11
 cis2.:m b:7 e
 }
 
