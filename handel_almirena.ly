@@ -103,22 +103,32 @@ a,,8 <e' a cis> a' fis b, a <a, cis e a>4 |
 % Bridge
 \mark \markup {\box B}
 
-r1 r r
+a8 d \times 2/3 {fis8 b cis} b8 e e a~ | 
+a8 e dis b fis4 cis | 
+b4 fis'8 b \times 2/3 {c8 fis b} a gis | 
 
 \break
 
-r1 r r 
+e8 dis b a~ a cis f g | 
+fis8 <b,,~ b'~ d~> <b b' d>4 <b a' dis> e'' |  
+<e,,, b' e gis b e>4 gis'8 b e gis b d, |
 
 \break
 
 % A'
 \mark \markup {\box A'}
 
-\empty
+<a, e' a cis>4 a''8 cis d e cis a | 
+<b,, a' d fis>4 b''8 fis' e cis b fis |
+e8 e,, b' d e gis b d | 
+<e, a cis>8 a, e' g b d e a |
 
 \break
 
-\empty
+<d,, a' d fis>4 d'8 fis a cis d fis |
+<e,,, e'''>4 d'''8 b a gis e4 |
+\times 2/3 {a8 cis d} \times 2/3 {cis8 d e} cis d fis8 gis |
+<a,,, e' a cis a''>2 <cis' e a>4 <a cis e>4 |
 
 \break
 
