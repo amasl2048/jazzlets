@@ -72,10 +72,29 @@ e8 f a f e c' d4 |
 d8 a' f e~ e d b a |
 
 \break
+\mark \markup {\box 2}
 
-\empty
-\empty
-\empty
+a,8 <g' c e>4 a,8 <g' c e>4 <f bes d> |
+g'8 e (d) e (d) bes a, <f' bes d> |
+a,8 <g' c e>4 a,8 <g' c e>4 <f bes d> |
+\times 2/3 {bes'8 (g) a} \times 2/3 {g f (d)}
+\times 2/3 {f (d) e} \times 2/3 {d c (bes)} |
+
+\break
+
+d,8 <c' f>4 g'8 d f (e) c~ | 
+c8 a4 bes8 a4 g |
+a,8 <g' c e>4 a8 g4 f |
+e8 f e d des c a bes |
+
+\break
+
+<b f' a d>4 b''8 c g' e \times 2/3 {g (e) f}|
+r1
+r1
+r1
+
+\break
 
 } % end theme
 
