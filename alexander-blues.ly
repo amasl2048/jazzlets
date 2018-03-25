@@ -22,6 +22,11 @@ a,,8 <g' c e>4 a,8 <g' c e>4 <f bes d>
 a,8 <g' c e>4 a,8 <g' c e>4 <f bes d>
 }
 
+riffs = {
+r8 <g, c e>4 r8 <g c e>4 <f bes d>
+r8 <g c e>4 r8 <g c e>4 <f bes d>
+}
+
 solo = \relative c'' {
   \clef treble
   \key a \minor
@@ -40,13 +45,13 @@ c'4 c \times 2/3 {c8 (a) g} a4 |
 
 c''4 c \times 2/3 {c8 (a) g} a4 |
 \times 2/3 {g8 e d} e4 d g8 a |
-\riff |
+\riffs |
 
 \break
 <a d f c'>4 c' \times 2/3 {c8 (a) g} a4 |
 <a, d f c'>4 c' \times 2/3 {c8 aes (e)} d'4 |
 <a, d g>8 <e' a> r a,, <g' c e>4 <f bes d> |
-a,8 <g' c e>4 a,8 <g' c e>4 <f bes d> |
+r8 <g c e>4 r8 <g c e>4 <f bes d> |
 \break
 
 % Solo
@@ -89,14 +94,48 @@ e8 f e d des c a bes |
 
 \break
 
-<b f' a d>4 b''8 c g' e \times 2/3 {g (e) f}|
-r1
-r1
-r1
+<b f' a d>4 bes''8 bes d c g' f |
+e8 d c bes b aes g f |
+e d g bes a e c bes |
+a8 <d g c>4 a8 <d g c>4 <g, c f bes> |
+
+\break
+
+\mark \markup {\box 3}
+
+a,8 <g' c e>4 a,8 <g' c e>4 <f bes d> |
+a,8 <d g b>4 a8 <e' g c>4 a,8 <f'~ bes~ d~>8 |
+<f bes d>8 a,8 <g' c e>4 e8 <a d g>4 a'8 |
+b16 c b a \times 2/3 {g8 e d} g16 e b bes a g e ees | 
+
+\break
+
+d8 <g c e>4 d8 <e' a d>4 <f bes ees>8 f' |
+e4  d16 c b c  b8 a g f |
+a,,8 <g' c e>4 a,8 <b' e a>4 <c f bes>8 c' |
+b4  c16 f, a f  (e16) d c bes  a8 a, | 
+
+\break
+
+<b a' d>4 c''16 f, a f  (e16) d c a b8 b, | 
+<bes aes' d>4 \times 2/3 {e'8 g b} \times 2/3 {a b c} d e |
+
+\break
+
+a,,,8 <g' c e b'>4 a,8 <g' c e b'>4 <bes f' a d> |
+a,8 <g' c e b'>4 a,8 <g' c e b'>4 <f bes d a'> |
+a,8 <g' c e b'>4 a,8 <g' c e b'>4 <bes f' a d>8 e' |
+a,,,8 <g' c e b'>4 a,8 <g' c e b'>4 <f bes d a'>8 g' |
 
 \break
 
 } % end theme
+
+harmony = \chordmode {
+a1:m7 a:m7 a:m7 a:m7
+d:m7 d:m7 a:m7 a:m7
+b:m7.5- e:7 a:m7 e:7
+} % end harmony
 
 harmonies = \chordmode {
 a1:m7 d:m7 a:m7 a:m7
@@ -104,14 +143,22 @@ d:m7 d:m7 a:m7 a:m7
 b:m7.5- e:7 a:m7 e:7
 } % end harmonies
 
+harmonye = \chordmode {
+a1:m7 d:m7 a:m7 a:m7
+d:m7 d:m7 a:m7 a:m7
+b:m7.5- e:7 a:m7 a:m7
+a:m7 a:m7
+} % end
+
 \score {
   <<
     \new ChordNames {
       \set chordChanges = ##t
       \time 4/4
+      \harmony
       \harmonies
       \harmonies
-      \harmonies
+      \harmonye
     }
     \new Staff {
       \set Staff.midiInstrument = #"electric guitar (jazz)"
