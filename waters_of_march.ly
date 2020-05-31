@@ -56,28 +56,31 @@ solo = \relative c'' {
 \break
   r4 g8 g f g aes4 |  
   bes8 g aes4 bes8 g aes4 |
-  r8 a g f ees f g r8 |
+  r8 a g f ees f g4 |
   r8 c bes ges r8 c bes f | 
   
 \break
   r8 g ees bes f' d a c |
   aes8 g aes4 r8 bes8 aes g |  
   f8 g g4. r4 r8 |
-  f8 ges ges4. r4 r8 |
+  f8 ges ges4 ees'8 f ges aes |
 
 \break
-  a'8 bes bes4 r4 \times 2/3 {c8 bes a} |
+  a8 bes bes4 r4 \times 2/3 {c8 bes a} |
   \times 2/3 {c8 bes aes} bes8 c d d r4 |
-  e8 ees ees4. r4 r8 |
-  ees8 f ges ges r4 r4 | 
+  d8 ees ees4. r4 r8 |
+  ees8 ees f ges~ ges f ees d~ | 
 
 \break
-\empty
+  d8 c bes a~ a f g aes~ |
+  aes ges f f~ f ees d g~ |
+  g f ees ees~ ees f ges ges~ |
+  ges f ees ees~ ees f ees d |
 
 } % end theme
 
 harmony = \chordmode {
-  bes1:maj/aes bes:maj/aes g:m6 ees:m7/fis
+  bes1:maj/aes bes:maj/aes g:m6 ees:m7/ges
   bes1:maj e:9 ees:maj aes:7.5-
   bes1:maj bes2:9.4 bes:7 ees1:maj ees:m7
   bes1:maj bes2:9.4 bes:7 ees1:maj ees:m7
